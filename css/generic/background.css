@@ -1,0 +1,4 @@
+body {
+    background: url('../../images/background-stars.svg') left top / cover no-repeat
+		        var(--color-black);
+}

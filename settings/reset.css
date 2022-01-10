@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@100;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: var(--ff-spartan);
+    font-size: var(--ff-base-size);
+}

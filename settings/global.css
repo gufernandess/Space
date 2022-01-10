@@ -1,0 +1,20 @@
+:root {
+    --color-white: #fff;
+    --color-black: #070722;
+    --color-dark-grey: #37374e;
+    --color-light-grey: #838391;
+    --color-mercury: #419db9;
+    --color-venus: #eda44a;
+    --color-earth: #6f2ed6;
+    --color-mars: #d14e33;
+    --color-jupiter: #d93b36;
+    --color-saturn: #cb5020;
+    --color-uranus: #1ec2a4;
+    --color-neptune: #2d68f0;
+
+    --button-hover: #313148;
+
+    --ff-spartan: "Spartan",sans-serif;
+    --ff-antonio: "Antonio",sans-serif;
+    --ff-base-size: 14px;
+}
