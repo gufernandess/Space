@@ -11,7 +11,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/earth.png">
 
-    <script src="js/navButton.js" defer></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/elements.css">
@@ -25,37 +25,55 @@
 </head>
 <body>
     <header>
-        <h1>Space</h1>
+        <h1><ion-icon name="planet"></ion-icon> Space</h1>
         <nav>
-            <button class="nav-button" onclick="catchButton(this)">Mercúrio</button>
-            <button class="nav-button" onclick="catchButton(this)">Vênus</button>
-            <button class="nav-button" onclick="catchButton(this)">Terra</button>
-            <button class="nav-button" onclick="catchButton(this)">Marte</button>
-            <button class="nav-button" onclick="catchButton(this)">Júpiter</button>
-            <button class="nav-button" onclick="catchButton(this)">Saturno</button>
-            <button class="nav-button" onclick="catchButton(this)">Urano</button>
-            <button class="nav-button" onclick="catchButton(this)">Netuno</button>
+            <button class="nav-button">Mercúrio</button>
+            <button class="nav-button">Vênus</button>
+            <button class="nav-button">Terra</button>
+            <button class="nav-button">Marte</button>
+            <button class="nav-button">Júpiter</button>
+            <button class="nav-button">Saturno</button>
+            <button class="nav-button">Urano</button>
+            <button class="nav-button">Netuno</button>
         </nav>
     </header>
     <main>
-        <div>
-            <img src="" alt="">
+        <div class="planet-review">
+                <img src="images/mercury/planet-mercury.svg" alt="">
         <article class="text-section">
-            <h2></h2>
-            <p></p>
-            <span></span>
+            <div>
+                <h2>Mercúrio</h2>
+                <p>
+                    Mercúrio é o menor planeta do Sistema Solar e o mais próximo do Sol. 
+                    Sua órbita ao redor do Sol leva 87,97 dias terrestres, o menor de todos os planetas do Sol. 
+                    Mercúrio é um dos quatro planetas terrestres do Sistema Solar e é um corpo rochoso como a Terra.
+                </p>
+            </div>
+            <span>Fonte: <a href="" target="_blank"> Wikipedia</a></span>
             <div class="planet-structure">
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="planet-structure-button"><span>01</span>Visão geral</button>
+                <button class="planet-structure-button"><span>02</span>Estrutura interna</button>
+                <button class="planet-structure-button"><span>03</span>Superfície geológica</button>
             </div>
         </article>
         </div>
         <article class="data-section">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <span>Tempo de rotação</span>
+                <h1>58.6 dias</h1>
+            </div>
+            <div>
+                <span>Tempo de translação</span>
+                <h1>87.97 dias</h1>
+            </div>
+            <div>
+                <span>Raio</span>
+                <h1>2,439.7 km</h1>
+            </div>
+            <div>
+                <span>Temperatura média</span>
+                <h1>430°C</h1>
+            </div>
         </article>
     </main>
 </body>

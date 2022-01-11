@@ -1,0 +1,19 @@
+.planet-structure-button {
+    background-color: var(--color-black);
+    border: 1px solid var(--color-dark-grey);
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    font-family: var(--ff-spartan);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 15px;
+    width: 100%;
+}
+
+.planet-structure-button:hover {background-color: var(--button-hover);}
+
+.planet-structure-button span {color: var(--color-light-grey); font-size: 0.85rem;}
