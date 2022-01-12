@@ -1,0 +1,103 @@
+@media screen and (max-width: 1130px) {
+    header {height: 18vh; flex-direction: column;}
+
+    header h1 {padding-top: 20px;}
+
+    nav {
+        width: 100%; 
+        justify-content: space-evenly; 
+        margin-right: 0;
+    }
+
+    .nav-button:nth-child(1):hover {border-bottom: 4px solid var(--color-mercury);}
+    .nav-button:nth-child(2):hover {border-bottom: 4px solid var(--color-venus);}
+    .nav-button:nth-child(3):hover {border-bottom: 4px solid var(--color-earth);}
+    .nav-button:nth-child(4):hover {border-bottom: 4px solid var(--color-mars);}
+    .nav-button:nth-child(5):hover {border-bottom: 4px solid var(--color-jupiter);}
+    .nav-button:nth-child(6):hover {border-bottom: 4px solid var(--color-saturn);}
+    .nav-button:nth-child(7):hover {border-bottom: 4px solid var(--color-uranus);}
+    .nav-button:nth-child(8):hover {border-bottom: 4px solid var(--color-neptune);}
+
+    .planet-review, .data-section {width: 90%;}
+
+    .planet-review {flex-direction: column;}
+
+    .planet-review img {max-width: 30%;}
+
+    .text-section {flex-direction: row; width: 90%; justify-content: space-between;}
+
+    .planet-structure {justify-content: flex-end;}
+
+}
+
+@media screen and (max-width: 930px) {
+
+    .data-section span {font-size: 0.6rem;}
+    .data-section h1 {font-size: 2rem;}
+    
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 10vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    header h1 {margin-left: 40px;}
+
+    header img {display: inherit; margin-right: 40px; margin-top: 30px;}
+
+    nav {
+        background-color: var(--color-black);
+        bottom: 0;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        gap: 0;
+        margin-right: 0;
+        justify-content: flex-start;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .nav-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid var(--button-hover);
+        font-size: 1rem;
+        height: 64px;
+        width: 90%;
+    }
+
+    main {height: 150vh;}
+
+    main h2 {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 40px;
+    }
+
+    .planet-review {width: 90%;}
+
+    .text-section {flex-direction: column; align-items: center; width: 100%;}
+
+    .text-section div {width: 100%;}
+
+    .planet-structure {display: none;}
+
+    .data-section {flex-direction: column;}
+
+    .data-section div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .data-section div h1 {
+        margin-right: 20px;
+    }
+
+}
