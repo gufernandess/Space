@@ -1,11 +1,12 @@
 @media screen and (max-width: 1130px) {
-    header {height: 18vh; flex-direction: column;}
+    header {height: 15vh; flex-direction: column;}
 
-    header h1 {padding-top: 20px;}
+    header h1 {padding-top: 15px; margin-left: 0;}
 
     nav {
+        height: 50%;
         width: 100%; 
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
         margin-right: 0;
     }
 
@@ -24,7 +25,7 @@
 
     .planet-review img {max-width: 30%;}
 
-    .text-section {flex-direction: row; width: 90%; justify-content: space-between;}
+    .text-section {flex-direction: row; width: 100%; justify-content: space-around;}
 
     .planet-structure {justify-content: flex-end;}
 
@@ -39,16 +40,15 @@
 
 @media screen and (max-width: 800px) {
     header {
-        height: 10vh;
+        height: 8vh;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 300px;
     }
 
     header h1 {margin-left: 40px; padding-top: 0;}
 
-    header img {display: inherit; margin-right: 40px; margin-top: 0px;}
+    header img {display: inherit; margin-right: 40px;}
 
     nav {
         background-color: var(--color-black);
@@ -60,7 +60,7 @@
         margin-right: 0;
         justify-content: flex-start;
         align-items: center;
-        height: 90vh;
+        height: 92vh;
     }
 
     .nav-button {
@@ -73,30 +73,53 @@
         width: 90%;
     }
 
+    main {height: 1300px;}
+
     main h2 {
         display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
     }
 
-    .planet-review {width: 90%; padding-top: 40px;}
-
-    .text-section {flex-direction: column; align-items: center; width: 100%;}
+    .text-section {flex-direction: column;}
 
     .text-section div {width: 100%;}
 
-    .planet-structure {display: none;}
+    .planet-structure {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+    }
 
-    .data-section {flex-direction: column; padding-bottom: 30px;}
+    .planet-structure span {display: none;}
+
+    .planet-structure-button {
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid var(--color-dark-grey);
+    }
+
+    .planet-structure-button:hover {background-color: transparent; border-bottom: 4px solid var();}
+
+    .data-section {flex-direction: column;}
 
     .data-section div {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
-    .data-section div h1 {
-        margin-right: 20px;
-    }
+    .data-section div span {font-size: 0.8rem;}
 
+    .data-section div h1 {margin-right: 20px;}
+
+}
+
+@media screen and (max-width: 400px) {
+    main h2 {font-size: 3.8rem;}
+    .planet-structure-button {font-size: 0.7rem;}
 }
