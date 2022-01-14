@@ -1,0 +1,105 @@
+[
+    {
+        "planet": "Mercúrio",
+        "description": "Mercúrio é o menor planeta do Sistema Solar e o mais próximo do Sol. Sua órbita ao redor do Sol leva 87,97 dias terrestres, o menor de todos os planetas do Sol. Mercúrio é um dos quatro planetas terrestres do Sistema Solar e é um corpo rochoso como a Terra.",
+        "source": "https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)",
+        "overview": "images/mercury/planet-mercury.svg",
+        "internalStructure": "images/mercury/planet-mercury-internal.svg",
+        "surfaceGeology": "images/mercury/planet-mercury-zoom.svg",
+        "rotationTime": 58.6,
+        "revolutionTime": 87.97,
+        "radius": 2439.7,
+        "averageTemperature": 430
+    },
+
+    {
+        "planet": "Vênus",
+        "description": "Vênus é o segundo planeta a partir do Sol. É nomeado em homenagem a deusa romana do amor e da beleza. Como o objeto natural mais brilhante no céu noturno da Terra depois da Lua, Vênus pode lançar sombras e pode ser, em raras ocasiões, visível a olho nu em plena luz do dia.",
+        "source": "https://pt.wikipedia.org/wiki/V%C3%A9nus_(planeta)",
+        "overview": "images/venus/planet-venus.svg",
+        "internalStructure": "images/venus/planet-venus-internal.svg",
+        "surfaceGeology": "images/venus/planet-venus-zoom.svg",
+        "rotationTime": 243,
+        "revolutionTime": 224.7,
+        "radius": 6051.8,
+        "averageTemperature": 471
+    },
+
+    {
+        "planet": "Terra",
+        "description": "Terceiro planeta a partir do Sol e o único planeta conhecido a abrigar vida. Cerca de 29,2% da superfície da Terra é terra, com os restantes 70,8% cobertos por água. A distância da Terra ao Sol, as propriedades físicas e a história geológica permitiram que a vida evoluísse e prosperasse.",
+        "source": "https://pt.wikipedia.org/wiki/Terra",
+        "overview": "images/earth/planet-earth.svg",
+        "internalStructure": "images/earth/planet-earth-internal.svg",
+        "surfaceGeology": "images/earth/planet-earth-zoom.svg",
+        "rotationTime": 0.99,
+        "revolutionTime": 365.26,
+        "radius": 6371,
+        "averageTemperature": 16
+    },
+
+    {
+        "planet": "Marte",
+        "description": "Marte é o quarto planeta a partir do Sol e o segundo menor planeta do Sistema Solar, sendo maior que apenas Mercúrio. Em inglês, Marte carrega o nome do deus romano da guerra e é muitas vezes referido como o 'Planeta Vermelho'.",
+        "source": "https://pt.wikipedia.org/wiki/Marte_(planeta)",
+        "overview": "images/mars/planet-mars.svg",
+        "internalStructure": "images/mars/planet-mars-internal.svg",
+        "surfaceGeology": "images/mars/planet-mars-zoom.svg",
+        "rotationTime": 1.03,
+        "revolutionTime": 1.88,
+        "radius": 3389.5,
+        "averageTemperature": -28
+    },
+
+    {
+        "planet": "Júpiter",
+        "description": "Júpiter é o quinto planeta a partir do Sol e o maior do Sistema Solar. É um gigante gasoso com uma massa duas vezes e meia maior que a de todos os outros planetas do Sistema Solar combinados, mas menos de um milésimo da massa do Sol.",
+        "source": "https://pt.wikipedia.org/wiki/J%C3%BApiter_(planeta)",
+        "overview": "images/jupiter/planet-jupiter.svg",
+        "internalStructure": "images/jupiter/planet-jupiter-internal.svg",
+        "surfaceGeology": "images/jupiter/planet-jupiter-zoom.svg",
+        "rotationTime": 9.93,
+        "revolutionTime": 11.86,
+        "radius": 69911,
+        "averageTemperature": -108
+    },
+
+    {
+        "planet": "Saturno",
+        "description": "Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar, depois de Júpiter. É um gigante gasoso com um raio médio de cerca de nove vezes e meia o da Terra. Tem apenas um oitavo da densidade média da Terra.",
+        "source": "https://pt.wikipedia.org/wiki/Saturno_(planeta)",
+        "overview": "images/saturn/planet-saturn.svg",
+        "internalStructure": "images/saturn/planet-saturn-internal.svg",
+        "surfaceGeology": "images/saturn/planet-saturn-zoom.svg",
+        "rotationTime": 10.8,
+        "revolutionTime": 29.46,
+        "radius": 58232,
+        "averageTemperature": -138
+    },
+
+    {
+        "planet": "Urano",
+        "description": "Urano é o sétimo planeta a partir do Sol. Seu nome é uma referência ao deus grego do céu, Urano segundo a mitologia grega, era o bisavô de Ares. Tem o terceiro maior raio planetário e a quarta maior massa planetária do Sistema Solar.",
+        "source": "https://pt.wikipedia.org/wiki/Urano_(planeta)",
+        "overview": "images/uranus/planet-uranus.svg",
+        "internalStructure": "images/uranus/planet-uranus-internal.svg",
+        "surfaceGeology": "images/uranus/planet-uranus-zoom.svg",
+        "rotationTime": 17.2,
+        "revolutionTime": 84,
+        "radius": 25362,
+        "averageTemperature": -195
+    },
+
+    {
+        "planet": "Netuno",
+        "description": "Netuno é o oitavo e mais distante planeta solar conhecido do Sol. No Sistema Solar, é o quarto maior planeta em diâmetro, o terceiro planeta mais massivo e o planeta gigante mais denso. É 17 vezes a massa da Terra, mais massiva que seu quase gêmeo Urano.",
+        "source": "https://pt.wikipedia.org/wiki/Netuno_(planeta)",
+        "overview": "images/neptune/planet-neptune.svg",
+        "internalStructure": "images/neptune/planet-neptune-internal.svg",
+        "surfaceGeology": "images/neptune/planet-neptune-zoom.svg",
+        "rotationTime": 16.08,
+        "revolutionTime": 164.79,
+        "radius": 24622,
+        "averageTemperature": -201
+    }
+]
