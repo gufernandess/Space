@@ -14,6 +14,16 @@
     width: 100%;
 }
 
-.planet-structure-button:hover {background-color: var(--button-hover);}
+@keyframes opacity-button-animation {
+    0% {
+        background-color: var(--color-black);
+    }
+    100% {
+        background-color: var(--button-hover);
+    }
+    
+}
+
+.planet-structure-button:hover {animation: opacity-button-animation .3s ease normal forwards;}
 
 .planet-structure-button span {color: var(--color-light-grey); font-size: 0.85rem;}

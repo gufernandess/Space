@@ -23,7 +23,7 @@
 
     .planet-review {flex-direction: column;}
 
-    .planet-review img {max-width: 30%;}
+    .planet-review img {max-width: 40%;}
 
     .text-section {flex-direction: row; width: 100%; justify-content: space-around;}
 
@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 800px) {
     header {
-        height: 8vh;
+        height: 10vh;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -52,15 +52,14 @@
 
     nav {
         background-color: var(--color-black);
-        bottom: 0;
+        top: 10vh;
         display: none;
         position: absolute;
         flex-direction: column;
         gap: 0;
-        margin-right: 0;
         justify-content: flex-start;
         align-items: center;
-        height: 92vh;
+        height: calc(100vh - 10vh);
     }
 
     .nav-button {
@@ -73,13 +72,13 @@
         width: 90%;
     }
 
-    main {height: 1230px;}
+    main {height: 1350px;}
 
     main h2 {
         display: flex; 
         justify-content: center;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .text-section {flex-direction: column;}
@@ -103,7 +102,7 @@
         border-bottom: 1px solid var(--color-dark-grey);
     }
 
-    .planet-structure-button:hover {background-color: transparent; border-bottom: 4px solid var();}
+    .planet-structure-button:hover {background-color: transparent !important; border-bottom: 4px solid var();}
 
     .data-section {flex-direction: column;}
 

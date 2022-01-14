@@ -19,6 +19,7 @@ header h1 {
 }
 
 nav {
+    animation: none;
     display: flex;
     flex-direction: row;
     gap: 33px;
@@ -33,4 +34,24 @@ header img {
     display: none;
     height: 32px;
     width: 32px;
+}
+
+@keyframes slide-in {
+    0% {
+        margin: 0 0 0 100%;
+    }
+    100% {
+        margin: 0;
+    }
+    
+}
+
+@keyframes slide-out {
+    0% {
+        margin: 0;
+    }
+    100% {
+        margin: 0 0 0 100%;
+    }
+    
 }

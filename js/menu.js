@@ -7,9 +7,13 @@ menu.addEventListener("click", () => {
 
     if(navState == "none") {
         nav.style.display = "flex";
+        nav.style.animation = "slide-in .3s ease normal forwards";
         page.style.overflow = "hidden";
     } else {
-        nav.style.display = "none";
-        page.style.overflow = "inherit";
+        nav.style.animation = "slide-out .3s ease normal forwards";
+        setTimeout(() => {
+            nav.style.display = "none";
+            page.style.overflow = "inherit";
+        }, 300);
     }
 });
