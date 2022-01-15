@@ -48,7 +48,7 @@
 
     header h1 {margin-left: 40px; padding-top: 0;}
 
-    header img {display: inherit; margin-right: 40px;}
+    .menu-button {display: inherit; margin-right: 40px;}
 
     nav {
         background-color: var(--color-black);

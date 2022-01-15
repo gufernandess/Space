@@ -12,17 +12,17 @@
     height: 100%;
 }
 
-.nav-button:hover {color: var(--color-white);}
+.nav-button:hover {color: var(--color-white) !important;}
 
 @media screen and (min-width: 1131px) {
 
-    .nav-button:nth-child(1):hover {border-top: 4px solid var(--color-mercury);}
-    .nav-button:nth-child(2):hover {border-top: 4px solid var(--color-venus);}
-    .nav-button:nth-child(3):hover {border-top: 4px solid var(--color-earth);}
-    .nav-button:nth-child(4):hover {border-top: 4px solid var(--color-mars);}
-    .nav-button:nth-child(5):hover {border-top: 4px solid var(--color-jupiter);}
-    .nav-button:nth-child(6):hover {border-top: 4px solid var(--color-saturn);}
-    .nav-button:nth-child(7):hover {border-top: 4px solid var(--color-uranus);}
-    .nav-button:nth-child(8):hover {border-top: 4px solid var(--color-neptune);}
+    .nav-button:nth-child(1):hover {border-top: 4px solid var(--color-mercury) !important;}
+    .nav-button:nth-child(2):hover {border-top: 4px solid var(--color-venus) !important;}
+    .nav-button:nth-child(3):hover {border-top: 4px solid var(--color-earth) !important;}
+    .nav-button:nth-child(4):hover {border-top: 4px solid var(--color-mars) !important;}
+    .nav-button:nth-child(5):hover {border-top: 4px solid var(--color-jupiter) !important;}
+    .nav-button:nth-child(6):hover {border-top: 4px solid var(--color-saturn) !important;}
+    .nav-button:nth-child(7):hover {border-top: 4px solid var(--color-uranus) !important;}
+    .nav-button:nth-child(8):hover {border-top: 4px solid var(--color-neptune) !important;}
     
 }

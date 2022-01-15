@@ -1,0 +1,18 @@
+.menu-button {
+    background-color: transparent;
+    border: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    width: 32px;
+}
+
+.menu-toogle {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    position: relative;
+    height: 4px;
+    width: 100%;
+}

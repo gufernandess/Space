@@ -29,11 +29,9 @@ nav {
 
 header ion-icon {font-size: 32px;}
 
-header img {
+.menu-button {
     cursor: pointer;
     display: none;
-    height: 32px;
-    width: 32px;
 }
 
 @keyframes slide-in {

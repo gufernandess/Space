@@ -11,8 +11,9 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/earth.png">
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="js/menu.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/script.js" defer></script>
 
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/elements.css">
@@ -28,28 +29,28 @@
     <header>
             <h1>Space</h1>
         <nav>
-            <button class="nav-button">Mercúrio</button>
-            <button class="nav-button">Vênus</button>
-            <button class="nav-button">Terra</button>
-            <button class="nav-button">Marte</button>
-            <button class="nav-button">Júpiter</button>
-            <button class="nav-button">Saturno</button>
-            <button class="nav-button">Urano</button>
-            <button class="nav-button">Netuno</button>
+            <button class="nav-button" id="0" onclick="pressButton(this.id)">Mercúrio</button>
+            <button class="nav-button" id="1" onclick="pressButton(this.id)">Vênus</button>
+            <button class="nav-button" id="2" onclick="pressButton(this.id)">Terra</button>
+            <button class="nav-button" id="3" onclick="pressButton(this.id)">Marte</button>
+            <button class="nav-button" id="4" onclick="pressButton(this.id)">Júpiter</button>
+            <button class="nav-button" id="5" onclick="pressButton(this.id)">Saturno</button>
+            <button class="nav-button" id="6" onclick="pressButton(this.id)">Urano</button>
+            <button class="nav-button" id="7" onclick="pressButton(this.id)">Netuno</button>
         </nav>
-        <img src="images/menu.png" alt="">
+        <button class="menu-button">
+            <div class="menu-toogle"></div>
+            <div class="menu-toogle"></div>
+            <div class="menu-toogle"></div>
+        </button>
     </header>
     <main>
         <div class="planet-review">
-                <img src="images/mercury/planet-mercury.svg" alt="">
+                <img src="" alt="">
         <article class="text-section">
             <div>
-                <h2>Mercúrio</h2>
-                <p>
-                    Mercúrio é o menor planeta do Sistema Solar e o mais próximo do Sol. 
-                    Sua órbita ao redor do Sol leva 87,97 dias terrestres, o menor de todos os planetas do Sol. 
-                    Mercúrio é um dos quatro planetas terrestres do Sistema Solar e é um corpo rochoso como a Terra.
-                </p>
+                <h2></h2>
+                <p></p>
                 <span>Fonte: <a href="" target="_blank"> Wikipédia</a></span>
             </div>
             <div class="planet-structure">
@@ -62,19 +63,19 @@
         <article class="data-section">
             <div>
                 <span>Tempo de rotação</span>
-                <h1>58,6 dias</h1>
+                <h1></h1>
             </div>
             <div>
                 <span>Tempo de translação</span>
-                <h1>87,97 dias</h1>
+                <h1></h1>
             </div>
             <div>
                 <span>Raio</span>
-                <h1>2.439,7 km</h1>
+                <h1></h1>
             </div>
             <div>
                 <span>Temperatura média</span>
-                <h1>430°C</h1>
+                <h1></h1>
             </div>
         </article>
     </main>
