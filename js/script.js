@@ -8,12 +8,22 @@ const planetStructureButttons = document.querySelectorAll(".planet-structure-but
 
 var idButton;
 
+pressButton(0);
+navButton[0].style.borderTopColor = "var(--color-mercury)";
+navButton[0].style.color = "white";
+planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[0],':hover').borderTopColor;
+
 function pressButton(id, borderTopColor, color) {
     idButton = id;
 
     document.querySelector("main").style.display = "flex";
-    
-    borderTopColor = window.getComputedStyle(navButton[id]).borderTopColor;
+
+    if(window.screen.width < 800) {
+        borderTopColor = window.getComputedStyle(navButton[id]).borderBottomColor;
+    } else {
+        borderTopColor = window.getComputedStyle(navButton[id]).borderTopColor;
+    }
+
     color = window.getComputedStyle(navButton[id]).color;
 
     navButton.forEach(element => {
@@ -21,7 +31,12 @@ function pressButton(id, borderTopColor, color) {
                                 "color: var(--color-light-grey);";
     });
 
+    clearStructure();
     changeData(id, borderTopColor, color);
+
+    if(window.getComputedStyle(menu).display == "flex") {
+        menuOut();
+    }
 }
 
 function changeData(id, borderTopColor, color) {
@@ -38,20 +53,28 @@ function changeData(id, borderTopColor, color) {
     dataSection[1].innerHTML = data[id].revolutionTime;
     dataSection[2].innerHTML = data[id].radius;
     dataSection[3].innerHTML = data[id].averageTemperature;
+}
 
-    if(window.getComputedStyle(menu).display == "flex") {
-        menuOut();
-    }
+function clearStructure() {
+    planetStructureButttons.forEach(element => {
+        element.style.cssText = "background-color: var(--color-black);";
+    });
 }
 
 planetStructureButttons[0].addEventListener("click", () => {
+    clearStructure();
+    planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
     overview.setAttribute("src", data[idButton].overview);
 });
 
 planetStructureButttons[1].addEventListener("click", () => {
+    clearStructure();   
+    planetStructureButttons[1].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
     overview.setAttribute("src", data[idButton].internalStructure);
 });
 
 planetStructureButttons[2].addEventListener("click", () => {
+    clearStructure();
+    planetStructureButttons[2].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
     overview.setAttribute("src", data[idButton].surfaceGeology);
 });
