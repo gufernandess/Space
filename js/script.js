@@ -9,22 +9,21 @@ const planetStructureButttons = document.querySelectorAll(".planet-structure-but
 var idButton;
 
 pressButton(0);
-navButton[0].style.borderTopColor = "var(--color-mercury)";
-navButton[0].style.color = "white";
-planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[0],':hover').borderTopColor;
 
-function pressButton(id, borderTopColor, color) {
+if(window.screen.width < 800) {
+    navButton[0].style.borderBottom = "4px solid var(--color-mercury)";
+    planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[0],':hover').borderBottomColor;
+} else {
+    navButton[0].style.borderTopColor = "var(--color-mercury)";
+    planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[0],':hover').borderTopColor;
+}
+
+navButton[0].style.color = "white";
+
+function pressButton(id, borderColor) {
     idButton = id;
 
     document.querySelector("main").style.display = "flex";
-
-    if(window.screen.width < 800) {
-        borderTopColor = window.getComputedStyle(navButton[id]).borderBottomColor;
-    } else {
-        borderTopColor = window.getComputedStyle(navButton[id]).borderTopColor;
-    }
-
-    color = window.getComputedStyle(navButton[id]).color;
 
     navButton.forEach(element => {
         element.style.cssText = "border-top-color: transparent;" + 
@@ -32,16 +31,26 @@ function pressButton(id, borderTopColor, color) {
     });
 
     clearStructure();
-    changeData(id, borderTopColor, color);
+
+    if(window.screen.width < 800) {
+        borderColor = window.getComputedStyle(navButton[id]).borderBottomColor;
+        planetStructureButttons[0].style.backgroundColor = borderColor;
+    } else {
+        borderColor = window.getComputedStyle(navButton[id]).borderTopColor;
+        planetStructureButttons[0].style.backgroundColor = borderColor;
+    }
+
+    changeData(id, borderColor);
 
     if(window.getComputedStyle(menu).display == "flex") {
         menuOut();
     }
 }
 
-function changeData(id, borderTopColor, color) {
-    navButton[id].style.borderTopColor = borderTopColor;
-    navButton[id].style.color = color;
+function changeData(id, borderColor) {
+    window.screen.width < 800 ? navButton[id].style.borderBottom = `4px solid ${borderColor}` : navButton[id].style.borderTopColor = borderColor;
+
+    navButton[id].style.color = "white";
 
     planet.innerHTML = data[id].planet;
     description.innerHTML = data[id].description;
@@ -63,18 +72,36 @@ function clearStructure() {
 
 planetStructureButttons[0].addEventListener("click", () => {
     clearStructure();
-    planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
+
+    if(window.screen.width < 800) {
+        planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderBottomColor;
+    } else {
+        planetStructureButttons[0].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
+    }
+
     overview.setAttribute("src", data[idButton].overview);
 });
 
 planetStructureButttons[1].addEventListener("click", () => {
     clearStructure();   
-    planetStructureButttons[1].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
+
+    if(window.screen.width < 800) {
+        planetStructureButttons[1].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderBottomColor;
+    } else {
+        planetStructureButttons[1].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
+    }
+
     overview.setAttribute("src", data[idButton].internalStructure);
 });
 
 planetStructureButttons[2].addEventListener("click", () => {
     clearStructure();
-    planetStructureButttons[2].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
+
+    if(window.screen.width < 800) {
+        planetStructureButttons[2].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderBottomColor;
+    } else {
+        planetStructureButttons[2].style.backgroundColor = window.getComputedStyle(navButton[idButton],':hover').borderTopColor;
+    }
+
     overview.setAttribute("src", data[idButton].surfaceGeology);
 });
