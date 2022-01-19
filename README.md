@@ -24,8 +24,14 @@
 </h1>
 
 <h2>🔎 Funcionamento</h2>
+<div align="center">
+<img src="assets/desktop.gif">
+</div>
 
 <h2>📱 Design responsivo</h2>
+<div align="center">
+<img src="assets/mobile.gif">
+</div>
 
 <h2>⚒️ Tecnologias</h2>
 <p>Fazendo este projeto, usei e estudei as seguintes tecnologias:</p>
